@@ -1,6 +1,6 @@
 package assessment;
 
-class Deer {
+public class Deer {
   public Deer() {
     System.out.print("Deer");
   }
@@ -11,7 +11,7 @@ class Deer {
     return false;
   }
   public static void main(String[] args) {
-    Deer deer = new Reindeer(5);
+    Reindeer deer = new Reindeer(5);
     System.out.println(","+deer.hasHorns());
   }
 }
