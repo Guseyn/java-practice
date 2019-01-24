@@ -17,6 +17,13 @@ public class MathOperators {
                 throw new Exception("zzz");
             }
         }
+        System.out.println(howMany());
+        System.out.println(howMany(new int[]{1, 2, 3}));
+        System.out.println(howMany(1, 2, 3));
+    }
+
+    private static int howMany(int... n) {
+        return n.length;
     }
 
 }
