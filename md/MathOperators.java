@@ -22,8 +22,11 @@ public class MathOperators {
         System.out.println(howMany(1, 2, 3));
         String randomString = "randomString";
         String randomString2 = "randomString";
-        if (randomString = randomString2) {
-            throw new Exception("expEqStr");
+        if (randomString != randomString2) {
+            throw new Exception("excpEqStr");
+        }
+        if ("randomString" != randomString) {
+            throw new Exception("excpEqStr2");
         }
     }
 
