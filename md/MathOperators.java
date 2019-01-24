@@ -28,6 +28,8 @@ public class MathOperators {
         if ("randomString" != randomString) {
             throw new Exception("excpEqStr2");
         }
+        System.out.println(new Integer(2).equals(new String("2")));
+        //System.out.println(new Integer(2) == new String("2"));
     }
 
     private static int howMany(int... n) {
