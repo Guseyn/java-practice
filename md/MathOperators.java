@@ -20,10 +20,27 @@ public class MathOperators {
         System.out.println(howMany());
         System.out.println(howMany(new int[]{1, 2, 3}));
         System.out.println(howMany(1, 2, 3));
+        String randomString = "randomString";
+        String randomString2 = "randomString";
+        if (randomString = randomString2) {
+            throw new Exception("expEqStr");
+        }
     }
 
     private static int howMany(int... n) {
         return n.length;
     }
 
+}
+
+
+class Rodent {
+    protected static Number chew() throws Exception {
+        System.out.println("Rodent is chewing"); return 1;
+    }
+}
+class Beaver extends Rodent {
+    public static Integer chew() throws RuntimeException {
+        System.out.println("Beaver is chewing on wood"); return 2;
+    }
 }
